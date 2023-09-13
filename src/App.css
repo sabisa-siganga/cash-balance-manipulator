@@ -1,38 +1,69 @@
-.App {
+/* google fonts and react-bootstrap bootstrap links 
+ for styling the cash balance manipulator app */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,400&display=swap');
+@import 'bootstrap/dist/css/bootstrap.min.css';
+
+/* styling of the body */
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+/* styling of the container of the app */
+.container {
   text-align: center;
+  background: #f3f0f0;
+  box-shadow: 1px 1px 37px #a7a4a4;
+  max-width: 600px;
+  height: 400px;
+  margin: 0 auto;
+  padding-top: 20px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  border-radius: 10px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* styling the label of the input field */
+label {
+  font-size: 20px;
+  font-weight: 400;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* styling of the input field container */
+.input-info {
   display: flex;
   flex-direction: column;
+  row-gap: 10px;
+  margin-bottom: 20px;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+/* styling of the input field  */
+input {
+  width: 200px;
+  height: 37px;
+  border: 2px solid #541554;
+  border-radius: 5px;
+  padding: 0 10px;
+  font-size: 15px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* styling of the buttons container */
+.btns {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  align-items: center;
+
+}
+
+/* styling of the buttons*/
+.btn {
+  width: 111px;
+  height: 40px;
+  background: #541554;
+  color: #fff;
+  border-radius: 5px;
+  border: 2px solid #fff;
+  font-size: 15px;
+
 }
